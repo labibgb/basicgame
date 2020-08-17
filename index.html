@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Simple Game
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body class="container">
+        <br/>
+        <br/>
+        <br/>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <br/>
+                <h3 id="score-1"></h3>
+                <br/>
+                <h1 id="cur-move-0" style="font-size: 10em; color: rgb(255, 136, 0);">0</h1>
+                <br/>
+                <h4 id="cur-score-0" style="font-size: 2em;">Current Score: 0</h4>
+                
+            </div>
+            <div class="col-md-4">
+                <h1 id="goal">Goal: 100</h1>
+                <br/>
+                <div class="header">
+                    <img src="dice/face-1.png" style='width:200px;height:200px;'> 
+                </div>
+                <br/>
+                <button class="btn btn-success" type="submit" id="btn-1">Player 1</button>
+                <button class="btn btn-danger" type="submit" id="btn-2">Stop</button>
+                <button class="btn btn-primary" type="submit" id="btn-3">Reset</button>
+            </div>
+            <div class="col-md-4">
+                <br/>
+                <h3 id="score-2"></h3>
+                <br/>
+                <h1 id="cur-move-1" style="font-size: 10em; color: rgb(255, 136, 0);">0</h1>
+                <br/>
+                <h4 id="cur-score-1" style="font-size: 2em;">Current Score: 0</h4>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <div class="container" style="color: red;">
+            <h4>Game Rules</h4>
+            <ul>
+                <li>The player who first reach the goal win the game.</li>
+                <li>A player can stop his/her move anytime. If the player stop his/her move then move goes to next player and add current score to his total score.</li>
+                <li>If a player get two 1 in a row then move automatically goes to next player and his current score become zero.</li>
+            </ul>
+        </div>
+
+    </body>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
